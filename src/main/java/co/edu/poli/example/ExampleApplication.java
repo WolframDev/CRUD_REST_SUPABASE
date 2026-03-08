@@ -17,8 +17,6 @@ public class ExampleApplication {
 
 		System.setProperty("DB_USER_SUPABASE", dbUser);
 		System.setProperty("DB_PWD_SUPABASE", dbPwd);
-        //System.setProperty("DB_USER_SUPABASE", System.getenv("DB_USER_SUPABASE"));
-        //System.setProperty("DB_PWD_SUPABASE", System.getenv("DB_PWD_SUPABASE"));	
 		SpringApplication.run(ExampleApplication.class, args);
 	}
 
