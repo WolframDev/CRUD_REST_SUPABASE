@@ -34,7 +34,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/crud_rest_supabase .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/crud_rest_supabase:latest .
 
     - name: Push Docker image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/crud_rest_supabase
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/crud_rest_supabase:latest
